@@ -130,7 +130,7 @@
 
     </header>
 
-    <main>
+    <main class="md: container mx-auto">
         <div class="bg-base-200 mt-20 py-12">
             <div class="relative flex items-center justify-evenly flex-col-reverse lg:flex-row-reverse">
                 <div class="flex items-center">
@@ -179,7 +179,7 @@
             <!-- Our Working Process Section -->
             <div class="flex flex-col justify-center items-center space-y-5 md:flex-col">
                 <div>
-                    <button class="flex flex-row px-5 py-2 bg-[#FFFFFF] rounded-3xl gap-2 font-bold text-sm justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    <button class="flex flex-row px-5 py-2 bg-[#FFFFFF] rounded-3xl gap-2 font-bold text-sm justify-center items-center mt-20"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
@@ -194,12 +194,35 @@
                         weathered wood, sleek
                         metal accents.</p>
                 </div>
-                <div>
-                    <!-- card inside the our work process section -->
-                    <div class="card bg-base-100 w-96 shadow-xl">
-                        <div class="card-body">
-                            <h2 class="card-title">Concept</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                <!-- card inside the our work process section -->
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                    <div class="card bg-base-100 p-5 flex justify-start w-64 bg-[#E7C1D3]">
+                        <div class="space-y-1">
+                            <img src="./assets/concept.png" alt="">
+                            <h2 class="font-extrabold">Concept</h2>
+                            <p class="font-semibold text-sm text-[#494949]">The barn house captivates with its blend of rustic charm and modern.</p>
+                        </div>
+                    </div>
+                    <div class="card bg-base-100 p-5 flex justify-start w-64 bg-[#EFDA6E]">
+                        <div class="space-y-1">
+                            <img src="./assets/flow-chart.png" alt="">
+                            <h2 class="font-extrabold">Design Process</h2>
+                            <p class="font-semibold text-sm text-[#494949]">The barn house captivates with its blend of rustic charm and modern.</p>
+                        </div>
+                    </div>
+                    <div class="card bg-base-100 p-5 flex justify-start w-64 bg-[#A4DAC3]">
+                        <div class="space-y-1">
+                            <img src="./assets/vision.png" alt="">
+                            <h2 class="font-extrabold">Supervision</h2>
+                            <p class="font-semibold text-sm text-[#494949]">The barn house captivates with its blend of rustic charm and modern.</p>
+                        </div>
+                    </div>
+                    <div class="card bg-base-100 p-5 flex justify-start w-64 bg-[#77AAEA]">
+                        <div class="space-y-1">
+                            <img src="./assets/budget-planning.png" alt="">
+                            <h2 class="font-extrabold">Budget Planning</h2>
+                            <p class="font-semibold text-sm text-[#494949]">The barn house captivates with its blend of rustic charm and modern.</p>
                         </div>
                     </div>
                 </div>
