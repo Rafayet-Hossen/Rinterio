@@ -85,14 +85,16 @@
                 </a>
             </div>
 
-            <div class="navbar-end lg:hidden">
+            <div class="navbar-end  lg:hidden">
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
+                        <div class="p-3 border bg-white shadow rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+                        </div>
                     </label>
                     <ul tabindex="0"
                         class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 right-0">
@@ -107,7 +109,7 @@
         </div>
 
         <!-- Banner Section -->
-        <div class="flex flex-col space-y-8">
+        <div class="flex flex-col space-y-8 mt-5">
             <div class="flex justify-center">
                 <img src="./assets/banner.png" alt="">
             </div>
@@ -116,10 +118,9 @@
                     appearance</h1>
             </div>
             <div class="flex justify-center">
-                <p class="font-medium text-[#494949] w-3/5 text-center">The barn house captivates with its blend of
-                    rustic charm and modern sophistication, featuring
-                    weathered wood, sleek
-                    metal accents, and large windows that flood the space with natural light.</p>
+                <p class="font-medium text-[#494949] w-3/5 text-center">House design is the process of creating the
+                    blueprint for a home, focusing on both functionality and aesthetics to
+                    ensure a comfortable and appealing living space.</p>
             </div>
             <div class="flex justify-center">
                 <button class="flex px-4 py-2 bg-[#CEF99E] rounded-3xl font-bold gap-2 items-center">View Details<svg
@@ -158,8 +159,9 @@
                         <h1 class="text-5xl font-bold text-center md:text-left mt-2">We design thoughtful,<br> liveable
                             spaces</h1>
                         <p class="py-6 text-center md:text-left">
-                            The barn house captivates with its blend of rustic charm <br> and
-                            modern sophistication, featuring weathered wood, sleek metal accents.
+                            Livable space refers to the areas within a home that are designed and used for daily living
+                            <br>activities, offering
+                            comfort, functionality, and a welcoming atmosphere.
                         </p>
                         <!-- Card Section -->
                         <div class="bg-base-100 rounded-lg ">
@@ -167,7 +169,8 @@
                                 <img src="./assets/commercial.png" alt="">
                                 <div>
                                     <h2 class="card-title">Commercial</h2>
-                                    <p>The barn house captivates with its blend <br>of rustic charm and modern.</p>
+                                    <p>Commercial spaces are designed to meet the specific needs of businesses <br> and
+                                        brand representation.</p>
                                 </div>
                             </div>
                         </div>
@@ -176,7 +179,8 @@
                                 <img src="./assets/residential.png" alt="">
                                 <div>
                                     <h2 class="card-title">Residential</h2>
-                                    <p>The barn house captivates with its blend <br>of rustic charm and modern.</p>
+                                    <p>Residential design focuses on creating comfortable and <br> functional living
+                                        spaces</p>
                                 </div>
                             </div>
                         </div>
@@ -270,11 +274,11 @@
         <div class="md:container mx-auto mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 lg:grid-rows-1 gap-3">
             <!-- card 1 -->
             <div
-                class="bg-[#ffffff] flex flex-col lg:flex-row justify-center items-center p-5 rounded-xl gap-5 col-span-1 sm:col-span-2 lg:col-span-9 border shadow">
+                class="bg-[#ffffff] flex flex-col lg:flex-row justify-center items-center p-4 rounded-xl gap-5 col-span-1 sm:col-span-2 lg:col-span-9 border shadow">
                 <div class="flex-shrink-0 w-full lg:w-auto">
                     <img src="./assets/img1.png" alt="" class="w-full h-auto object-cover">
                 </div>
-                <div class="flex flex-col w-auto justify-center p-5 space-y-3">
+                <div class="flex flex-col w-auto justify-center space-y-3">
                     <h1 class="font-bold text-xl">Commercial</h1>
                     <p class="text-justify">The barn house captivates with its blend of rustic charm and modern. The
                         barn house
@@ -293,8 +297,13 @@
                 <img src="./assets/img2.png" alt="" class="w-full h-auto object-cover">
             </div>
             <!-- card 3 -->
-            <div class="bg-[#ffffff] p-5 rounded-xl col-span-1 sm:col-span-2 lg:col-span-2 border shadow">
+            <div
+                class="bg-[#ffffff] p-5 hidden lg:block rounded-xl col-span-1 sm:col-span-2 lg:col-span-2 border shadow">
                 <img src="./assets/img3.png" alt="" class="w-full h-auto object-cover">
+            </div>
+            <div
+                class="bg-[#ffffff] p-5 border block shadow lg:hidden rounded-xl col-span-1 sm:col-span-2 lg:col-span-2">
+                <img src="./assets/img5.png" alt="" class="w-full h-auto object-cover">
             </div>
             <!-- card 4 -->
             <div
@@ -317,11 +326,11 @@
                 </div>
             </div>
             <!-- card 5 -->
-            <div class="bg-[#ffffff] p-5 border shadow rounded-xl col-span-1 sm:col-span-2 lg:col-span-2">
+            <div class="bg-[#ffffff] p-5 order-2 border shadow rounded-xl col-span-1 sm:col-span-2 lg:col-span-2">
                 <img src="./assets/img5.png" alt="" class="w-full h-auto object-cover">
             </div>
             <div
-                class="bg-[#ffffff] border shadow p-5 rounded-xl block lg:hidden col-span-1 sm:col-span-2 lg:col-span-1">
+                class="bg-[#ffffff] border order-1 shadow p-5 rounded-xl block lg:hidden col-span-1 sm:col-span-2 lg:col-span-1">
                 <img src="./assets/img3.png" alt="" class="w-full h-auto object-cover">
             </div>
         </div>
@@ -449,10 +458,10 @@
                     Let's Connect</button>
                 <h1 class="text-4xl font-extrabold">Let's Discuss Next Project</h1>
                 <p class="mt-4 text-lg text-gray-700">
-                    The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring
-                    weathered
-                    wood, sleek
-                    metal accents.
+                    Interior design is the art and science of enhancing the interior of a space to create a more
+                    aesthetically pleasing and functional environment. <br> It involves the thoughtful selection of
+                    colors, furniture, lighting, and decorative elements to transform a room into a cohesive and
+                    inviting space.
                 </p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
